@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem</title>
+    <style>
+        /* Remove margens e faz a página ocupar toda a tela */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Estiliza a imagem para ser responsiva e não cortar */
+        .fundo-img {
+            width: 100%;      /* ocupa toda a largura */
+            height: auto;     /* mantém a proporção da imagem */
+            display: block;   /* remove espaços indesejados abaixo da imagem */
+        }
+
+        /* Opcional: centralizar verticalmente caso a imagem seja menor que a tela */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;   /* altura da tela */
+            width: 100%;
+            background-color: #000; /* cor de fundo para preencher espaços */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="sua-imagem.jpg" alt="Fundo" class="fundo-img">
+    </div>
+</body>
+</html>
